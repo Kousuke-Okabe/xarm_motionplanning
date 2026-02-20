@@ -118,10 +118,33 @@ int main(int argc, char** argv)
   // move_group.setPlanningTime(10.0);
   // move_group.setNumPlanningAttempts(10);
 
-  bool success = (move_group.plan(my_plan) == moveit::core::MoveItErrorCode::SUCCESS);
-  if(success) move_group.move();
+  move_group.move();
 
 
+  // for(int i=0; i<5; i++){
+  //   target_pose.position.x =  0.4;
+  //   target_pose.position.y =  0.0;
+  //   target_pose.position.z =  0.4;
+  //   target_pose.orientation.w = 0.0;
+  //   target_pose.orientation.x = 1.0;
+  //   target_pose.orientation.y = 0.0;
+  //   target_pose.orientation.z = 0.0;
+  //   move_group.setPoseTarget(target_pose);
+
+  //   move_group.move();
+
+    
+  //   target_pose.position.x =  0.4;
+  //   target_pose.position.y =  0.0;
+  //   target_pose.position.z =  0.4;
+  //   target_pose.orientation.w = 0.3827;
+  //   target_pose.orientation.x = 0.9239;
+  //   target_pose.orientation.y = 0.0;
+  //   target_pose.orientation.z = 0.0;
+  //   move_group.setPoseTarget(target_pose);
+
+  //   move_group.move();
+  // }
 
 
 
